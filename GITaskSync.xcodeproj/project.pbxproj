@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		655D718A1514BAAB00D6E80C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655D71891514BAAB00D6E80C /* WebKit.framework */; };
+		655D718B1514BAAB00D6E80C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655D71891514BAAB00D6E80C /* WebKit.framework */; };
 		65F313BE15114B770020B33A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F313BD15114B770020B33A /* Cocoa.framework */; };
 		65F313C815114B770020B33A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65F313C615114B770020B33A /* InfoPlist.strings */; };
 		65F313CA15114B770020B33A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F313C915114B770020B33A /* main.m */; };
@@ -135,6 +137,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		655D71861511ED2800D6E80C /* OAuthClientId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthClientId.h; sourceTree = "<group>"; };
+		655D71881511EF5A00D6E80C /* OAuthClientId.template.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuthClientId.template.h; sourceTree = "<group>"; };
+		655D71891514BAAB00D6E80C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = ../../../../../../../System/Library/Frameworks/WebKit.framework; sourceTree = "<group>"; };
 		65F313B915114B770020B33A /* GITaskSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GITaskSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F313BD15114B770020B33A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		65F313C015114B770020B33A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -243,6 +248,7 @@
 				65F313BE15114B770020B33A /* Cocoa.framework in Frameworks */,
 				65F314E0151158280020B33A /* Security.framework in Frameworks */,
 				65F314E31511583D0020B33A /* SystemConfiguration.framework in Frameworks */,
+				655D718A1514BAAB00D6E80C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +260,7 @@
 				65F313DD15114B790020B33A /* Cocoa.framework in Frameworks */,
 				65F314E1151158280020B33A /* Security.framework in Frameworks */,
 				65F314E41511583D0020B33A /* SystemConfiguration.framework in Frameworks */,
+				655D718B1514BAAB00D6E80C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +270,8 @@
 		65F313AE15114B760020B33A = {
 			isa = PBXGroup;
 			children = (
+				655D71861511ED2800D6E80C /* OAuthClientId.h */,
+				655D71881511EF5A00D6E80C /* OAuthClientId.template.h */,
 				65F313F7151151B60020B33A /* GTL */,
 				65F313C315114B770020B33A /* GITaskSync */,
 				65F313E015114B790020B33A /* GITaskSyncTests */,
@@ -283,6 +292,7 @@
 		65F313BC15114B770020B33A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				655D71891514BAAB00D6E80C /* WebKit.framework */,
 				65F314E21511583D0020B33A /* SystemConfiguration.framework */,
 				65F314DF151158280020B33A /* Security.framework */,
 				65F313BD15114B770020B33A /* Cocoa.framework */,
@@ -825,9 +835,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = (
-					"-DGTL_BUILT_AS_FRAMEWORK=1",
-				);
+				OTHER_CFLAGS = "-DGTL_BUILT_AS_FRAMEWORK=1";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -849,12 +857,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DGTL_BUILT_AS_FRAMEWORK=1",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DGTL_BUILT_AS_FRAMEWORK=1",
-				);
+				OTHER_CFLAGS = "-DGTL_BUILT_AS_FRAMEWORK=1";
+				OTHER_CPLUSPLUSFLAGS = "-DGTL_BUILT_AS_FRAMEWORK=1";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -948,6 +952,7 @@
 				65F313ED15114B790020B33A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65F313EE15114B790020B33A /* Build configuration list for PBXNativeTarget "GITaskSyncTests" */ = {
 			isa = XCConfigurationList;
@@ -956,6 +961,7 @@
 				65F313F015114B790020B33A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
